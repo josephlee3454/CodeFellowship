@@ -1,10 +1,5 @@
 package com.example.codefellowshiptwo.configs;
 
-
-
-//
-//import com.codefellows.dinosaurs.DinosaursApplication;
-//import com.codefellows.dinosaurs.models.dinosaurUser.DinosaurUserRepository;
 import com.example.codefellowshiptwo.Models.user.CodeUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
