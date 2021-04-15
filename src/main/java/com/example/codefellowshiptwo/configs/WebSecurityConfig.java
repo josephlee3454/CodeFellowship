@@ -59,7 +59,7 @@ public void configure(HttpSecurity httpSecurity) throws Exception {
 
             .and()
             .logout()
-            .logoutSuccessUrl("/"); // allows you to visit /logout and be logged out
+            .logoutSuccessUrl("/codeUser"); // allows you to visit /logout and be logged out
 
 }
 }
