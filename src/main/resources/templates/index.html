@@ -6,7 +6,10 @@
 </head>
 <body>
 <h2>code fellowship home this is the index page </h2>
+<h2 th:if="${user}" th:text="${user}"></h2>
 <form action="/codeUser" method="POST">
+
+
     <label for="username">username</label>
     <input type="text" name="username">
 

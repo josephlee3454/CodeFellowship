@@ -11,7 +11,7 @@ import java.security.Principal;
 @Controller
 public class CodeController {
     @GetMapping("/")
-    public String showCodeHome(Principal p){ // Principal == the user
+    public String showCodeHome(Principal p, Model m){ // Principal == the user
         System.out.println("p" + p);
         if(p != null){
             System.out.println("p.getName() = " + p.getName());
@@ -30,21 +30,10 @@ public class CodeController {
 
 
 
+    @GetMapping("/*")
+    public String catchAll(){
 
-
-
-
-
-
-//    @PostMapping("/codeUser")
-//    public RedirectView createUser(){
-//        return new RedirectView("/");
-//    }
-//
-//
-//    @GetMapping("/login")
-//    public String showLoginPAge(){
-//        return "login.html";
-//    }
+        return"codeUser.html";
+    }
 
 }
